@@ -5,7 +5,7 @@ const port = 3000
 
 app.use(express.json({ limit: '50mb' }));
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.send({ 'message': 'Compare Base64 API!' })
 })
 app.post('/compare', async (req, res) => {
